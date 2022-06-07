@@ -1,0 +1,75 @@
+.right_saidbar{
+    background-color: var(--r-bar);
+    display: grid;
+    justify-content: center;
+    justify-items: center;
+    grid-template-rows: 80px 80px 80px .7fr 80px;
+    position: fixed;
+    top: 60px;
+    height: 100%;
+    width:5% ;
+}
+
+.right_saidbar> .side_btn{
+    background:none;
+    border-style:none;
+    cursor: pointer;
+    width: 44px;
+    height: 44px;
+    margin-top: 20px;
+    
+}
+.MainPage > .side_btn{
+    background:none;
+    border-style:none;
+    cursor: pointer;
+    width: 44px;
+    height: 44px;
+    margin-top: 20px;}
+
+.side_btn .fa-solid{
+    position: relative;
+    color: var(--text-color);
+    font-size: 22px;
+}
+
+.side_btn span{
+    user-select: none;
+    position: relative;
+    display: block;
+    font-size: 11px;
+    color: var(--text-color);
+    top: 2px;
+}
+
+.side_btn:hover{
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    transition: .4s;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.4);
+    border-radius: 13px;
+}
+
+.side_btn:hover::before{
+    content: '';
+    background:var(--shop-btn) ;
+    display:inline-table;
+    position: absolute;
+    width: 4px;
+    height: 35px;
+    top: 5px;
+    left: 0px;
+    border-radius: 10px;
+    transition: .5s;
+}
+
+.side_btn:hover > .fa-solid{
+    color: var(--shop-btn);
+    transform: translateY(5px);
+    transition: .6s;
+}
+
+.side_btn:hover > span{
+    visibility: hidden;
+}
+

@@ -1,0 +1,26 @@
+html{
+    height: 100%;
+}
+
+body{
+    min-height:100vh;
+    padding: 0;
+    background-color:rgb(233, 233, 233);
+    overflow-x: hidden;
+    display: grid;
+    grid-template-columns: repeat(20,1fr);
+    grid-template-rows:60px;
+    user-select:none;
+}
+
+body>aside{
+    grid-column: 1/1;
+}
+
+body>.case{
+    grid-column: 2/-1;    
+}
+
+body>nav{
+    grid-column: 1/-1;
+}

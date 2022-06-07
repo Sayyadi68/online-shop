@@ -1,0 +1,28 @@
+[data-theme="light"]{
+    --text-color:#292626;
+    --shop-btn:rgb(23, 145, 226);
+    --nav-color:rgb(22, 25, 27);
+    --r-bar:#b4c5d6;
+    --cases:#919b91;
+    --shop-title:#292626;
+    --toggel-check:#292626;
+    --case-color:#cfd4da;
+    --hamburger-color:#67a2e0de;
+    --burger-items:rgba(0, 0, 0, 0.6);
+    --categori-hover:rgba(148, 142, 142, 0.5);
+    --slider-buttons:rgba(151, 150, 150, 0.5);
+}
+
+[data-theme="dark"]{
+    --text-color:#dbd8d8;
+    --shop-btn: rgb(27, 116, 189);
+    --nav-color:rgb(27, 116, 189);
+    --r-bar:rgb(31, 30, 30);
+    --cases:rgb(41, 39, 39) ;
+    --shop-title:#dbd8d8;
+    --toggel-check:#fff;
+    --case-color:#313335;
+    --hamburger-color:#080606dc;
+    --categori-hover:rgba(12, 12, 12, 0.685);
+    --slider-buttons:rgba(22, 20, 20, 0.685);
+}

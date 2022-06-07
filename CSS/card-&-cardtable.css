@@ -1,0 +1,102 @@
+.case{
+    background:var(--case-color);
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-content: center;
+}
+
+.Weekend_top_builders{
+    background: #41596900;
+    height: 30vh;
+    display: grid;
+    grid-template-columns: repeat(10,1fr);
+    justify-content: flex-start;
+    align-items:center;
+    overflow-y: hidden;
+    overflow-x: scroll;
+    margin: 0px 80px 40px 80px;
+}
+
+.categori{
+    width: 200px;
+    height: 23vh;
+    margin: 20px;
+    border-radius: 15px;
+    background: #ffffff;  
+}
+.categori:hover{
+    box-shadow: 5px 3px 9px var(--categori-hover);
+    cursor: pointer;
+    transition:.3s;
+}
+
+/*shop items*/
+.shop_box{
+    height: 350px;
+    overflow-y: hidden;
+    display: grid;
+    grid-template-columns: repeat(8,1fr);
+    overflow-x: scroll;
+    margin: 0px 50px 30px 50px;
+    align-content: stretch;
+    border-radius: 10px;
+}
+
+.ShopItem{
+    width: 170px;
+    margin: 10px;
+    border-radius: 8px;
+    background: #ffffff;
+
+}
+.ShopItem:hover{
+    background: #353434;
+    transform: translateY(-5px);
+    transition: .4s;
+    box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.6);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    cursor: pointer;
+}
+
+.ShopName{
+    color: var(--shop-title);
+    margin:0 0 8px 70px;
+    font:bold 25px 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+}
+
+/* slider */
+
+.top_box{
+    width: 700px;
+    height: 200px;
+    display: flex;
+}
+.top_box > img{
+    display: none;
+    width: 700px;
+}
+.slids{
+
+    width:740px;
+    display: flex;
+    align-items: center;
+    align-content:stretch ;
+    margin:auto;
+}
+.w3-button{
+    width: 28px;
+    height: 200px;
+    background: var(--slider-buttons);
+    border-style: none;
+}
+.w3-button:hover i{
+    color: blue;
+    transition: all .3s;
+}
+.w3-button i{
+    color: var(--text-color);
+    font-size: 40px;
+}

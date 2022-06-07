@@ -1,0 +1,171 @@
+/* night mod & light mod  chenger */
+
+
+#ChangeTheme {
+    width: 0;
+    height: 0;
+    opacity: 0;
+  }
+  label {
+    top: -93px;
+    right: 210px;
+    display: block;
+    height: 15px;
+    width: 60px;
+    position: relative;
+    transform:  translate(50px, 100px);
+    cursor: pointer;
+    margin: 7px 0px 7px 0px;
+  }
+  span.slide {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #5c5a5a;
+    border-radius: 30px;
+  }
+
+  span.Theme:before{
+    position: absolute;
+    content: "Theme Mod";
+    height: 44px;
+    width: 150px;
+    color: var(--text-color);
+    border-radius: 50%;
+    top: -8px;
+    left: 80px;
+    font-size: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+
+  span.Theme:hover::before{
+    color:var(--nav-color);
+    transition: .4s;
+    text-shadow: 0px 2px 10px rgba(0, 0, 0, 0.6) ;
+  }
+
+  span.slide:before {
+    position: absolute;
+    content: "";
+    height: 20px;
+    width: 20px;
+    background:var(--toggel-check);
+    border-radius: 50%;
+    top: -2px;
+    left: 0px;
+    transition: 0.5s;
+    box-shadow: rgba(0, 0, 0, 0.21) 0px 0px 7px 1px;
+  }
+  
+  .txt p:nth-child(1) {
+    color: grey;
+    font-weight: bold;
+    font-size: 1.1em;
+    transition: 0.5s;
+  }
+  #ChangeTheme:checked + span.slide:before {
+    transform: translatex(40px);
+    transition:all .5s;
+  }
+
+  #ChangeTheme:checked + span {
+      background: #4c86d8;
+      transition:all .4s;
+  }
+
+
+
+/* hamburger menu */
+
+#hamburger-menu{
+  position: relative;
+  top: 8px;
+  right: 10px;
+  width: 25px;
+  height: 25px;
+  appearance: none;
+  -webkit-appearance:none;
+  cursor: pointer;
+  text-align: center;
+  border-radius: 5px;
+  color: rgb(255, 255, 255);
+}
+
+#hamburger-menu::before{
+  content: '\f0c9';
+  font-family: 'Font Awesome 5 Free';
+  font-weight: 700;
+  font-size: 1.8em;
+  z-index: 10;
+  color: var(--text-color);
+  transition:all .5s;
+}
+#hamburger-menu:checked::before{
+    content: '\f00d';
+    animation: anim .5s;
+    transition:all .5s;
+}
+@keyframes anim{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+#hamburger-menu::after{
+    content: '';
+    position: absolute;
+    top: -15%;
+    left: -20%;
+    width: 140%;
+    height: 120%;
+    background: rgba(255, 255, 255, 0);
+    border-radius: 5px;
+    z-index: -1;
+}
+#hamburger-menu:checked ~ #hamburger-menu-items{
+  display: flex;
+  transform: translateX(0px);
+  transition:all .5s;
+}
+
+#hamburger-menu-items{
+  display: none;
+  flex-direction: column;
+  align-items:flex-end;
+  position:absolute;
+  height: 90vh;
+  width: 260px;
+  top: 60px;
+  right: 0px;
+  background-color: var(--hamburger-color);
+  border-top-left-radius: 20px;
+  box-shadow: -2px 2px 10px var(--burger-items) ;
+  z-index: 1;
+}
+
+#hamburger-menu-items .burger-btn{
+  position: relative;
+  font-style: normal;
+  font-size: 20px;
+  align-items: center;
+  text-align: center;
+  line-height:30px ;
+  color: var(--text-color);
+  padding: 10px 20px 10px 50px;
+  display: block;
+  z-index: 1;
+}
+
+#hamburger-menu-items .burger-item:hover{
+  width: 100%;
+  background: rgba(59, 59, 59, 0.568);
+  transition:all .3s;
+  display: flex;
+  flex-direction: column;
+  align-items:flex-end;
+  border-radius: 20px 0px 0px 20px;
+  box-shadow: -2px 2px 10px var(--burger-items) ;
+  z-index: 1;
+}

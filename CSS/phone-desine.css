@@ -1,0 +1,100 @@
+ /* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+  .slids{display: none;}
+}
+ 
+ @media screen and (min-width: 0px) and (max-width:480px){
+  .navbar .text_style{
+    display: none;
+  }
+  
+  .move{
+    position: relative;
+    top: -5px;
+    right: -24px;
+  }
+
+  .logo h1{
+    font-size: 15px;
+    top: 21px
+  }
+
+  .menu{
+    position: relative;
+    top: -5px;
+  }
+
+  #hamburger-menu:checked ~ #hamburger-menu-items{
+    position: absolute;
+    top: 43px;
+  }
+
+  .slids{
+    display:none;
+  }
+}
+
+@media screen and (min-width: 481px) and (max-width:768px) {
+    .navbar .text_style{
+    display: none;
+  }
+  
+  .move{
+    position: relative;
+    top: -5px;
+    right: -24px;
+  }
+
+  .logo h1{
+    font-size: 15px;
+    top: 21px
+  }
+
+  .menu{
+    position: relative;
+    top: -5px;
+  }
+
+  #hamburger-menu:checked ~ #hamburger-menu-items{
+    position: absolute;
+    top: 43px;
+  }
+
+  .slids{display: none;}
+}
+
+/*
+@media screen and (min-width: 769px) and (max-width:1279px) {
+  .right_saidbar{
+    height: 638px;
+  }
+}
+
+@media screen and (min-width: 1280px){
+  .right_saidbar{
+    height: 709px;
+  }
+} */
+
+@media screen and (min-width: 0px) and (max-width:997px){
+  .right_saidbar{
+    width:60px ;
+  }
+
+  .Weekend_top{
+  margin: 0px 40px 5px 40px;
+}
+
+  .slids{width: 500px;}
+  .top_box{
+    width: 500px;
+    height: 200px;
+    display: flex;
+  }
+  .top_box > img{
+    display: none;
+    width: 500px;
+  }
+
+}

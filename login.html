@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="img/SHI_LERA GROP.png">
+    <script src="https://kit.fontawesome.com/c681203e25.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="CSS/themes.css">
+    <link rel="stylesheet" href="CSS/navbar.css">
+    <link rel="stylesheet" href="CSS/card-&-cardtable.css">
+    <link rel="stylesheet" href="CSS/grid.css">
+    <link rel="stylesheet" href="CSS/checkbox.css">
+    <link rel="stylesheet" href="logincss/section.css">
+    <title>SHI_LERA | Login</title>
+</head>
+<body>
+    <nav class="navbar">
+        <ul>
+    
+            <!--navbar-->
+            <li id="home" class="nav_btn"><a href="./index.html"><i class="text_style fa-solid fa-house">HOME</i></a></li>
+            <li id="logo" class="logo"><img src="img/SHI_LERA GROP.png" alt="SHI_LERA" width="35px" height="40px"><h1 class="fa-solid">Shi_Lera</h1></li>
+            
+                  <!-- hamburger menu -->
+                <div class="menu">
+                    <input type="checkbox" id="hamburger-menu">
+                  <div id="hamburger-menu-items">
+    
+                <!-- about -->
+                <li class="burger-item"><a href="./index.html"><i class="burger-btn">HOME</i></a></li>
+                <li class="burger-item"><a href="./sign up.html"><i class="burger-btn">SIGN UP</i></a></li>
+                <li class="burger-item"><a href="./login.html"><i class="burger-btn">LOGIN</i></a></li>
+
+                <!-- login and signeout -->
+                <li class="burger-item"><a href="#"><i class="burger-btn">NEW SMART PHONE</i></a></li>
+                <li class="burger-item"><a href="#"><i class="burger-btn">MOST PAPULER</i></a></li>
+                <li class="burger-item"><a href="#"><i class="burger-btn">SELLING PHONE</i></a></li>
+                <li class="burger-item"><a href="#"><i class="burger-btn">ABOUT US</i></a></li>
+
+    
+                  </div>
+                </div>
+    
+    
+        </ul>
+    </nav>
+
+    <section>
+        <div class="login-form">
+            <form id="login" method="get" onsubmit="return(login())"> 
+                <i class="fa-solid fa-user"></i><b>  Gmail</b>
+                <input type="email" name="Uname" id="Uname" placeholder="Gmail">    
+                <br><br>  
+                <i class="fa-solid fa-key"></i><b>  Password</b>   
+                <input type="Password" name="Pass" id="Pass" placeholder="Password">    
+                <br><br>    
+                <input type="submit" name="log" id="log" value="Log In">       
+                <br><br>    
+                <input type="checkbox" id="check" value="true">    
+                <span>Remember me</span>    
+                <br><br>    
+                <a href="#">Forgot Password?</a>
+                <br><br>
+                <a href="./sign up.html">Don't have an account?</a>    
+            </form>     
+    </div>
+    <div class="accaunt-img"><i class="fa-solid fa-user"></i></div>
+    </section>
+
+</body>
+</html>
